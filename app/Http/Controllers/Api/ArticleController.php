@@ -43,7 +43,7 @@ class ArticleController extends Controller
         if (!$article) {
             return response()->json(['message' => 'Something went wrong'], 422);
         }
-        return response()->json(['message' => 'Article successfully created'], 202);
+        return response()->json(['message' => 'Article successfully created'], 201);
     }
 
     /**
